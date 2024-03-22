@@ -1,0 +1,7 @@
+{
+  "name": "RTDB_IoT_Prueba",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
