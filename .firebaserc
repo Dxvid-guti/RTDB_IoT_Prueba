@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "rtdb-iot-prueba": {
+      "hosting": {
+        "app": [
+          "rtdb-iot-prueba"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "rtdb-iot-prueba"
+  }
+}
