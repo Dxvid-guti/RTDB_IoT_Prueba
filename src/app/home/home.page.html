@@ -1,8 +1,8 @@
 <ion-content>
   <ion-grid>
     <ion-row>
-      <ion-col>
-        <div class="container"></div>
+      <ion-col *ngFor="let variable of variablesDB">
+        <div class="window" [ngClass]="{ 'light-on': variable.lightOn }"></div>
       </ion-col>
     </ion-row>
   </ion-grid>

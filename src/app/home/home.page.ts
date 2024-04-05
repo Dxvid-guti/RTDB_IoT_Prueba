@@ -10,11 +10,17 @@ export class HomePage implements OnInit {
 
   constructor(private database:Database) {}
 
+  variablesDB: any[] = [];
+
   ngOnInit() {
     const route = ref(this.database, "/casa");
     object(route).subscribe(attributes => {
       const valores_db = attributes.snapshot.val();
-      console.log(valores_db);//Imprimir valores obtenidos de la busqueda en la ruta 
+      this.variablesDB = Object.keys(valores_db).map(key => ({
+        key,
+        value: valores_db[key],
+        lightOn: valores_db[key] === true // Indicador de estado de luz
+      }));
     });
   }
 

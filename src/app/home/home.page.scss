@@ -2,7 +2,7 @@ ion-content{
   background-color: black;
 }
 
-.container {
+.window {
   width: 30rem;
   height: 20rem;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
@@ -13,7 +13,7 @@ ion-content{
   overflow: hidden;
 }
 
-.container:before {
+.window:before {
   content: "";
   position: absolute;
   background: inherit;
@@ -25,4 +25,8 @@ ion-content{
   box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
   filter: blur(10px);
   margin: -20px;
+}
+
+.light-on {
+  background: linear-gradient(135deg, #faff77, #ffee53); /* Cambiar el color de fondo cuando la luz está encendida */
 }
