@@ -2,7 +2,7 @@
   <ion-grid>
     <ion-row>
       <ion-col *ngFor="let variable of variablesDB">
-        <div class="window" [ngClass]="{ 'light-on': variable.lightOn }"></div>
+        <img [src]="variable.imageUrl" alt="{{ variable.key }}">      
       </ion-col>
     </ion-row>
   </ion-grid>

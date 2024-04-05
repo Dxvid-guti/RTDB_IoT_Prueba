@@ -19,7 +19,7 @@ export class HomePage implements OnInit {
       this.variablesDB = Object.keys(valores_db).map(key => ({
         key,
         value: valores_db[key],
-        lightOn: valores_db[key] === true // Indicador de estado de luz
+        imageUrl: valores_db[key] ? 'https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f4a1.png' : 'https://imagenpng.com/wp-content/uploads/2015/04/Imagenes-Foco-PNG-0.png'
       }));
     });
   }
